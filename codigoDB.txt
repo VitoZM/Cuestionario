@@ -1,0 +1,53 @@
+CREATE table teachers(
+	idTeacher int not null AUTO_INCREMENT PRIMARY KEY,
+	name varchar(60),
+	email varchar(40),
+	password varchar(40),
+	created_at TIMESTAMP NULL DEFAULT NULL,
+	updated_at TIMESTAMP NULL DEFAULT NULL
+)
+
+CREATE table subjects(
+	idSubject int not null AUTO_INCREMENT PRIMARY KEY,
+	initials varchar(10),
+	name varchar(40),
+	created_at TIMESTAMP NULL DEFAULT NULL,
+	updated_at TIMESTAMP NULL DEFAULT NULL
+)
+
+CREATE table tests(
+	idTest int not null AUTO_INCREMENT PRIMARY KEY,
+	idTeacher int not null,
+	idSubject int not null,
+	duration int,
+	repetitions int,
+	rightAnswers char(1),
+	wrongAnswers char(1),
+	type char(1),
+	questions varchar(200),
+	description varchar(150),
+	created_at TIMESTAMP NULL DEFAULT NULL,
+	updated_at TIMESTAMP NULL DEFAULT NULL,
+	foreign key(idTeacher)references teachers(idTeacher),
+	foreign key(idSubject)references subjects(idSubject)
+)
+
+CREATE table questions(
+	idQuestion int not null AUTO_INCREMENT PRIMARY KEY,
+	idSubject int not null,
+	question varchar(1000),
+	type char(1),
+	foreign key(idSubject)references subjects(idSubject),
+	created_at TIMESTAMP NULL DEFAULT NULL,
+	updated_at TIMESTAMP NULL DEFAULT NULL
+)
+
+CREATE table answers(
+	idAnswer int not null AUTO_INCREMENT PRIMARY KEY,
+	idQuestion int not null,
+	answer varchar(1000),
+	state char(1),
+	foreign key(idQuestion)references questions(idQuestion),
+	created_at TIMESTAMP NULL DEFAULT NULL,
+	updated_at TIMESTAMP NULL DEFAULT NULL
+)
