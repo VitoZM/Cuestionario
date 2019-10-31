@@ -31,6 +31,10 @@ Route::get('/cuestionario', function () {
     return view('cuestionario');
 });
 
+Route::get('/pregunta', function () {
+    return view('pregunta');
+});
+
 Route::get('/pregunta/{estado}', function ($estado) {
     return view('pregunta')->with('estado',$estado);
 });
@@ -41,6 +45,6 @@ Route::post('index.php/authenticate','ServerController@authenticate');
 
 Route::post('close','ServerController@close');
 
-Route::post('/getSubjects','ServerController@getSubjects');
+Route::post('getSubjects','ServerController@getSubjects');
 
 Route::post('/saveTest','ServerController@saveTest');

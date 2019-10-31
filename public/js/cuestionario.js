@@ -20,7 +20,7 @@ $(document).ready(function(){
     $.post(url, data, result => {
         var subjects = result.split(",");
 
-        let selectSubjects = "<option selected value='-'>Ninguno</option>";
+        let selectSubjects = "<option selected value=''>Seleccionar Materia</option>";
         subjects.forEach(function(s) {
             if(s != "")
                 selectSubjects += "<option value='" + s + "'>" + s + "</option>";
@@ -42,3 +42,16 @@ function saveTest(e){
             window.location.href = "../pregunta";
     });
 }
+
+$cuestionarioForm.submit(e => {
+    e.preventDefault();
+
+    let url = "../saveTest";
+    let data = $cuestionarioForm.serialize();
+
+    $.post(url, data, result => {
+        console.log(result);
+        if(result.trim() == "400 OK")
+            window.location.href = "../pregunta";
+    });
+});

@@ -62,7 +62,7 @@
                             <div class="form-group">
                                 <label class="control-label">Nombre</label>
                                 <i class="icon fa fa-question-circle text-info fa-fw " title="Introducir un nombre al cuestionario" ></i>
-                                <input type="text" class="form-control" placeholder="Introduce el nombre del cuestionario" name="name" id="name"/>
+                                <input type="text" class="form-control" placeholder="Introduce el nombre del cuestionario" name="name" id="name" required="required"/>
                                                                 
                             </div>
                         </div>
@@ -81,7 +81,7 @@
                                         <label class="control-label">Materia</label>
                                         <i class="icon fa fa-question-circle text-info fa-fw " title="Elija la materia a la cual sera asignada este cuestionario" ></i>
                                         
-                                    <select class="form-control" id="subjects" name="subjects">
+                                    <select class="form-control" id="subjects" name="subjects" required="required">
                                         
                                     </select>
                                 </div>
@@ -115,7 +115,7 @@
                           <label class="control-label">Abrir Cuestionario</label>
                           <i class="icon fa fa-question-circle text-info fa-fw " title="Dar una fecha de Inicio para habilitar el cuestionario" ></i>
                           <div class="input-group date">
-                              <input class="form-control" type="text" name="initialDate" id="initialDate" />
+                              <input class="form-control" type="text" name="initialDate" id="initialDate"/>
                              <span class="input-group-append">
                                   <button class="btn btn-outline-secondary" type="button">
                                       <i class="fa fa-calendar"></i>
@@ -290,8 +290,8 @@
 
             <div class="row" style="margin-top: 10px;">
                     <div class="col-lg-12">
-                        <div class="pull-right">
-                            <a href="pregunta" class="btn btn-success btn-lg" id="btnSubmit" onclick="saveTest(event);"><i class="fa fa-share"></i> Continuar</a>
+                        <div class="pull-right"><i class="fa fa-share"></i>
+                            <input type="submit" class="btn btn-success btn-lg" value="-&gt; Continuar">
                         </div>
                     </div>
                 </div>

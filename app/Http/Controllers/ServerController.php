@@ -28,7 +28,7 @@ class ServerController extends Controller
 		$subjectsDB = Subject::all();
 		$subjects = "";
 		foreach($subjectsDB as $s){
-			$subjects = $subjects.",".$s->name;
+			$subjects = $subjects.",".$s->initials;
 		}
 		return $subjects;
 	}
@@ -44,8 +44,8 @@ class ServerController extends Controller
 		session_start();
 		$name = request('name');
 		$description = request('description');
-		$nameSubject = request('subjects');
-		$idSubject = Subject::where('name',$nameSubject)->first()->idSubject;
+		$subjectInitial = request('subjects');
+		$idSubject = Subject::where('initials',$subjectInitial)->first()->idSubject;
 		$initialDate = request('initialDate');
 		$finalDate = request('finalDate');
 		$duration = request('duration');
