@@ -69,7 +69,7 @@
             <div class="carousel-item active" style="background-image: url('../img/estudiar.jpg')">
               <div class="carousel-caption d-none d-md-block">
                 <h2 class="display-4">Crea cuestionarios</h2>
-                <p class="lead">Puedes realizar cuestionarios para diferente materia</p>
+                <p class="lead">Puedes realizar cuestionarios para diferente materia. . .</p>
               </div>
             </div>
             <!-- Carrusel 2-->
