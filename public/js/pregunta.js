@@ -3,7 +3,7 @@ const $session = $('#session');
 $(document).ready(function(){
 
     let data = $session.serialize();
-    let url = "getSubjects";
+    let url = "../getSubjects";
 
     $.post(url, data, result => {
         var subjects = result.split(",");
@@ -15,5 +15,5 @@ $(document).ready(function(){
         });
         $('#subjects').html(selectSubjects);
     });
-    
+
 });

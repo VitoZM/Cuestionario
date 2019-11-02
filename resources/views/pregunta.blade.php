@@ -33,13 +33,12 @@
                               <tr>
                               <div class="col-md-8 col-lg-4">
                                 <div class="form-grupo">
-                                        <label class="control-label">Materia</label>
-                                        <i class="icon fa fa-question-circle text-info fa-fw " title="Elija la materia a la cual sera asignada este cuestionario" ></i>
-                                        
-                                    
-                                    <select class="form-control" id="subjects" name="subjects">
-                                        
-                                    </select>
+                                        <label class="control-label" id="materia">Materia:</label>
+                                        <div id="seccionMateria" style="display: none;">
+                                        <i class='icon fa fa-question-circle text-info fa-fw' title='Elija la materia a la cual sera asignada este cuestionario'></i>
+                                        <select class='form-control' id='subjects' name='subjects'></select>
+                                        </div><br><br>
+
                                 </div>
                         </div>
                               </tr>
@@ -58,7 +57,7 @@
                                 <tr>
                                     <td><i class="fa fa-archive"></i></td><td colspan="2"> <a class="btn btn-info btn-sm shadow-blue fa fa-share" href="banco"> Baúl de preguntas </a></td>
                                 </tr>
-                                
+
                             </tbody>
                         </table>
                     </div>
@@ -78,15 +77,15 @@
                                     </div>
                                     <p>¿Scrum es un marco de trabajo para desarrollo ágil de software?</p>
                                 </div>
-                                <div class="col-sm-3"> 
-                                    <a href="#" class="btn btn-group btn-xs tip load-in-modal shadow-blue" data-placement="top" title="" data-original-title="Ver"> 
+                                <div class="col-sm-3">
+                                    <a href="#" class="btn btn-group btn-xs tip load-in-modal shadow-blue" data-placement="top" title="" data-original-title="Ver">
                                         <i class="fa fa-eye"></i>
-                                    </a> 
-                                    <a href="#" class="btn btn-primary btn-xs tip load-in-modal shadow-blue" data-placement="top" title="" data-original-title="Editar"> 
-                                        <i class="fa fa-edit"></i> 
-                                    </a> 
-                                    <a href="#" class="btn btn-danger btn-xs tip shadow-danger" data-placement="top" title="" data-original-title="Borrar"> 
-                                        <i class="fa fa-remove"></i> 
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-xs tip load-in-modal shadow-blue" data-placement="top" title="" data-original-title="Editar">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-xs tip shadow-danger" data-placement="top" title="" data-original-title="Borrar">
+                                        <i class="fa fa-remove"></i>
                                     </a>
                                 </div>
                             </div>
@@ -124,30 +123,30 @@
                         <!-- Contenido de poup -->
                         <center><h2 class="text-uppercase">Verdadero/Falso</h2></center>
                         <center><img class="img-fluid d-block mx-auto" src="{{ asset ('img/verdadero_o_falso.png') }}"></center>
-                        
-                        
-                        <div class="form-group" style="margin-top: 5%;"> 
-                                <input type="hidden" value="true-false" > 
-                                <input type="hidden" value="3120"> 
+
+
+                        <div class="form-group" style="margin-top: 5%;">
+                                <input type="hidden" value="true-false" >
+                                <input type="hidden" value="3120">
                                 <label for="FVPreg">¿Cuál es la pregunta?</label>
                                 <span class="text-danger">*</span>
                                 <textarea autocomplete="off" class="form-control input-question-txt" required="required" cols="30" rows="1"></textarea>
                         </div>
-    
-    
-                        <div class="form-group"> 
+
+
+                        <div class="form-group">
                                 <label for="FVPuntos">Puntos</label>
-                                <span class="text-danger">*</span> 
+                                <span class="text-danger">*</span>
                                 <input value="1" class="form-control" required="required" type="number">
                         </div>
 
 
-                        <div class="form-group"> 
+                        <div class="form-group">
                                 <label for="FVResp">¿Cuál es la respuesta correcta?</label>
-                                <span class="text-danger">*</span> 
+                                <span class="text-danger">*</span>
                                 <select class="form-control">
                                         <option selected="">Falso</option>
-                                        <option>Verdadero</option>                                                    
+                                        <option>Verdadero</option>
                                 </select>
                         </div>
 
@@ -189,37 +188,37 @@
                         <center><h2 class="text-uppercase">Selección Múltiple</h2></center>
                         <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                         <center><img class="img-fluid d-block mx-auto" src="{{ asset ('img/multi.jpg') }}"></center>
-                        
 
-                        <div class="form-group" style="margin-top: 5%;"> 
-                                <input type="hidden" value="true-false" > 
-                                <input type="hidden" value="3120"> 
+
+                        <div class="form-group" style="margin-top: 5%;">
+                                <input type="hidden" value="true-false" >
+                                <input type="hidden" value="3120">
                                 <label for="MultiPreg">¿Cuál es la pregunta?</label>
                                 <span class="text-danger">*</span>
                                 <textarea autocomplete="off" class="form-control input-question-txt" required="required" cols="30" rows="1"></textarea>
                         </div>
-    
-    
-                        <div class="form-group"> 
+
+
+                        <div class="form-group">
                                 <label for="MultiPuntos">Puntos</label>
-                                <span class="text-danger">*</span> 
+                                <span class="text-danger">*</span>
                                 <input value="1" class="form-control" required="required" type="number">
                         </div>
 
 
-                        <div class="form-group"> 
+                        <div class="form-group">
                                 <label for="MultiResp">¿Cuál es la respuesta correcta?</label>
-                                <span class="text-danger">*</span> 
+                                <span class="text-danger">*</span>
                                 <select class="form-control">
                                         <option selected="">Falso</option>
-                                        <option>Verdadero</option>                                                    
+                                        <option>Verdadero</option>
                                 </select>
                         </div>
 
 
-                        <div class="form-group"> 
-                                <input type="hidden" value="true-false" > 
-                                <input type="hidden" value="3120"> 
+                        <div class="form-group">
+                                <input type="hidden" value="true-false" >
+                                <input type="hidden" value="3120">
                                 <label for="MultiPista">Pista</label>
                                 <span class="text-danger">*</span>
                                 <textarea autocomplete="off" class="form-control input-question-txt" required="required" cols="30" rows="1"></textarea>
@@ -259,37 +258,37 @@
                         <!-- Contenido de poup -->
                         <center><h2 class="text-uppercase">Selección Única</h2></center>
                         <center><img class="img-fluid d-block mx-auto" src="{{ asset ('img/unica.png') }}"></center>
-                        
 
-                        <div class="form-group" style="margin-top: 5%;"> 
-                                <input type="hidden" value="true-false" > 
-                                <input type="hidden" value="3120"> 
+
+                        <div class="form-group" style="margin-top: 5%;">
+                                <input type="hidden" value="true-false" >
+                                <input type="hidden" value="3120">
                                 <label for="UnicaText">¿Cuál es la pregunta?</label>
                                 <span class="text-danger">*</span>
                                 <textarea autocomplete="off" class="form-control input-question-txt" required="required" cols="30" rows="1"></textarea>
                         </div>
-    
-    
-                        <div class="form-group"> 
+
+
+                        <div class="form-group">
                                 <label for="UnicaPuntos">Puntos</label>
-                                <span class="text-danger">*</span> 
+                                <span class="text-danger">*</span>
                                 <input value="1" class="form-control" required="required" type="number">
                         </div>
 
 
-                        <div class="form-group"> 
+                        <div class="form-group">
                                 <label for="UnicaPreg">¿Cuál es la respuesta correcta?</label>
-                                <span class="text-danger">*</span> 
+                                <span class="text-danger">*</span>
                                 <select class="form-control">
                                         <option selected="">Falso</option>
-                                        <option>Verdadero</option>                                                    
+                                        <option>Verdadero</option>
                                 </select>
                         </div>
 
 
-                        <div class="form-group"> 
-                                <input type="hidden" value="true-false" > 
-                                <input type="hidden" value="3120"> 
+                        <div class="form-group">
+                                <input type="hidden" value="true-false" >
+                                <input type="hidden" value="3120">
                                 <label for="UnicaPista">Pista</label>
                                 <span class="text-danger">*</span>
                                 <textarea autocomplete="off" class="form-control input-question-txt" required="required" cols="30" rows="1"></textarea>
@@ -318,5 +317,15 @@
           </div>
 
 <script src="{{ asset('js/pregunta.js') }}"></script>
+<script type="text/javascript">
+
+    var $initials = '<?php if(isset($initials)) echo $initials; else echo "null"; ?>';
+
+    if($initials == "null")
+        $('#seccionMateria').fadeIn();
+    else
+        $('#materia').append(" " + $initials);
+
+</script>
 </body>
 </html>

@@ -35,8 +35,8 @@ Route::get('/pregunta', function () {
     return view('pregunta');
 });
 
-Route::get('/pregunta/{estado}', function ($estado) {
-    return view('pregunta')->with('estado',$estado);
+Route::get('/pregunta/{initials}', function ($initials) {
+    return view('pregunta')->with('initials',$initials);
 });
 
 Route::post('/authentication','ServerController@authentication');

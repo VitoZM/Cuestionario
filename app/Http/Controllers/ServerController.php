@@ -51,7 +51,7 @@ class ServerController extends Controller
 		$duration = request('duration');
 		$repetitions = request('repetitions');
 
-		Test::create([
+		/*Test::create([
 			'idTeacher' => $_SESSION['id'],
 			'idSubject' => $idSubject,
 			'name' => $name,
@@ -61,7 +61,7 @@ class ServerController extends Controller
 			'finalDate' => $finalDate,
 			'questions' => "",
 			'description' => $description
-		]);
+		]);*/
 
 		return "400 OK";
 	}

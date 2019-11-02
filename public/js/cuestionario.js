@@ -48,10 +48,11 @@ $cuestionarioForm.submit(e => {
 
     let url = "../saveTest";
     let data = $cuestionarioForm.serialize();
+    let initials = $("#subjects option:selected").text();
 
     $.post(url, data, result => {
-        console.log(result);
+
         if(result.trim() == "400 OK")
-            window.location.href = "../pregunta";
+            window.location.href = "../pregunta/" + initials;
     });
 });
