@@ -17,7 +17,7 @@
     <script src="../node_modules/bootstrap/dist/js/bootstrap-datepicker.js"></script>
 
 
-    
+
 
 
 
@@ -50,7 +50,7 @@
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
                         <i class="glyphicon glyphicon-search"></i>
                         <b class="subtitulo">General</b>
-                        
+
                     </a>
                 </h4>
             </div>
@@ -63,7 +63,7 @@
                                 <label class="control-label">Nombre</label>
                                 <i class="icon fa fa-question-circle text-info fa-fw " title="Introducir un nombre al cuestionario" ></i>
                                 <input type="text" class="form-control" placeholder="Introduce el nombre del cuestionario" name="name" id="name" required="required"/>
-                                                                
+
                             </div>
                         </div>
                         <div class="col-md-8 col-lg-4">
@@ -71,8 +71,8 @@
                             <label class="control-label">Instrucciones</label>
                             <i class="icon fa fa-question-circle text-info fa-fw " title="Introducir una descripcion del cuestionario" ></i><br>
                             <textarea cols="form-control" rows="5"  placeholder=" Instrucciones" style="width: 100%;" name="description" id="description"></textarea>
-                            
-                            
+
+
                             </div>
                         </div>
 
@@ -80,14 +80,14 @@
                                 <div class="form-grupo">
                                         <label class="control-label">Materia</label>
                                         <i class="icon fa fa-question-circle text-info fa-fw " title="Elija la materia a la cual sera asignada este cuestionario" ></i>
-                                        
+
                                     <select class="form-control" id="subjects" name="subjects" required="required">
-                                        
+
                                     </select>
                                 </div>
                             </div>
 
-                        
+
 
 
                     </div>
@@ -141,7 +141,7 @@
                             <div class="form-grupo">
                                     <label class="control-label">Tiempo de duración</label>
                                     <i class="icon fa fa-question-circle text-info fa-fw " title="Introduce un tiempo limite de duracion del examen" ></i>
-                                    
+
                                 <select class="form-control" name="duration" id="duration">
                                     <option selected="">10 minutos</option>
                                     <option>15 minutos</option>
@@ -170,25 +170,41 @@
 
 
         <div class="card card-default">
+
+
+                <div id="collapse3" class="collapse close-modal">
+                    <div class="card-body">
+                        <div class="row">
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card card-default">
                 <div class="card-header">
                     <h4 class="card-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
                             <i class="glyphicon glyphicon-search text-gold"></i>
-                            <b class="subtitulo">Calificación</b>
+                            <b class="subtitulo">Comportamiento del cuestionario</b>
                         </a>
                     </h4>
                 </div>
-    
-                <div id="collapse3" class="collapse close-modal">
+
+                <div id="collapse4" class="collapse close-modal">
                     <div class="card-body">
                         <div class="row">
                                 <div class="col-md-8 col-lg-4">
                                         <div class="form-grupo">
                                                 <label class="control-label">Intentos permitidos</label>
                                                 <i class="icon fa fa-question-circle text-info fa-fw " title="Introduce la cantidad de intentos a dar en el tiempo de examen" ></i>
-                                                
-                                            <select class="form-control">
-                                                <option selected="" name="repetitions" name="repetitions">Sin límite</option>
+
+                                            <select class="form-control" name="repetitions" id="repetitions">
+                                                <option value="0" selected>Sin límite</option>
                                                 <option>1</option>
                                                 <option>2</option>
                                                 <option>3</option>
@@ -199,89 +215,21 @@
                                                 <option>8</option>
                                                 <option>9</option>
                                                 <option>10</option>
-                                                
-            
+
+
                                             </select>
+                                        </div>
+                                </div>
+<br><br><br>
+                                <div class="col-md-8 col-lg-4">
+                                        <div class="form-grupo"><br>
+                                        <label class="checkbox-inline"><input type="checkbox" value="1" id="rigthAnswers" name="rigthAnswers"> Mostrar Respuestas Correctas</label>
+                                        <label class="checkbox-inline"><input type="checkbox" value="1" id="wrongAnswers" name="wrongAnswers"> Mostrar Respuestas Incorrectas</label><br>
                                         </div>
                                 </div>
 
 
-                                <div class="col-md-8 col-lg-4">
-                                    <div class="form-group">
-                                            <label class="control-label">Calificación para aprobar</label>
-                                            <i class="icon fa fa-question-circle text-info fa-fw " title="Cantidad de puntaje que los usuarios deben igualar o superar para aprobar" ></i>
-                                            <input type="text" class="form-control" placeholder="Nota de aprobación"/>
-                                                                            
-                                    </div>
-                                </div>
-    
-                            
-                                <div class="col-md-8 col-lg-4">
-                                        <div class="form-grupo">
-                                                <label class="control-label">Método de calificación</label>
-                                                <i class="icon fa fa-question-circle text-info fa-fw " title="Opciones al ponderar nota segun los intentos dados" ></i>
-                                                
-                                            <select class="form-control">
-                                                <option selected="">Calificación más alta</option>
-                                                <option>Promedio de calificaciones</option>
-                                                <option>Primer intento</option>
-                                                <option>Último intento</option>
-                                                                                                            
-                                            </select>
-                                        </div>
-                                </div>
-    
-    
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-        
-            
-            <div class="card card-default">
-                <div class="card-header">
-                    <h4 class="card-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                            <i class="glyphicon glyphicon-search text-gold"></i>
-                            <b class="subtitulo">Comportamiento del cuestionario</b>
-                        </a>
-                    </h4>
-                </div>
-    
-                <div id="collapse4" class="collapse close-modal">
-                    <div class="card-body">
-                        <div class="row">
-                                  
-                            
-                                <div class="col-md-8 col-lg-4">
-                                        <div class="form-grupo">
-                                                <label class="control-label">Orden de las preguntas</label>
-                                                <i class="icon fa fa-question-circle text-info fa-fw " title="Opciones al ponderar nota segun los intentos dados" ></i>
-                                                
-                                            <select class="form-control">
-                                                <option selected="">Calificación más alta</option>
-                                                <option>Promedio de calificaciones</option>
-                                                <option>Primer intento</option>
-                                                <option>Último intento</option>
-                                                                                                            
-                                            </select>
-                                        </div>
-                                </div>
-                                <div class="col-md-8 col-lg-4">
-                                    <div class="form-grupo">
-                                            <label class="control-label">Mostrar resultados</label>
-                                            <i class="icon fa fa-question-circle text-info fa-fw " title="Permitira mostrar las preguntas en orden diferente o aleatorio para los estudiantes" ></i>
-                                            
-                                        <select class="form-control">
-                                            <option selected="">En orden</option>
-                                            <option>Aleatorio</option>
-                                                        
-                                        </select>
-                                    </div>
-                                </div>
-    
-    
                         </div>
                     </div>
                 </div>
@@ -303,7 +251,7 @@
                 {!! csrf_field() !!}
                 </form>
             </div>
-    
+
 </div>
 <script src="../js/cuestionario.js"></script>
 <script src="../js/llenar.js"></script>

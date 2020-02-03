@@ -27,7 +27,7 @@ $(document).ready(function(){
         });
         $('#subjects').html(selectSubjects);
     });
-    
+
 });
 
 function saveTest(e){
@@ -54,5 +54,7 @@ $cuestionarioForm.submit(e => {
 
         if(result.trim() == "400 OK")
             window.location.href = "../pregunta/" + initials;
+        else
+            console.log(result);
     });
 });

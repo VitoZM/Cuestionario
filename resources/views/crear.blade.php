@@ -16,8 +16,8 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
     <script src="{{ asset('node_modules/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ asset('node_modules/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-    
-    
+
+
 </head>
 <body id="body">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: black;">
@@ -56,7 +56,7 @@
           </div>
         </div>
       </nav>
-      
+
       <header>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -97,22 +97,22 @@
               </a>
         </div>
       </header>
-      
-       
- 
-      
+
+
+
+
 <!-- Servicios -->
 <section class="page-section" id="services">
-        <h2 class="section-heading text-uppercase" style="color: black;">Servicios</h2>
+        <h2 class="section-heading text-uppercase" style="font-family: 'Kaushan Script', cursive; color: black;">Servicios</h2>
         <h3 class="section-subheading text-muted">Comienza a disfrutar de la pagina y todos sus beneficios</h3>
 <article>
     <div class="item-wrapper" onclick="window.location ='cuestionario';">
       <figure>
-        <div class="image" style="background-image:url('../img/servicio1.png');"></div>
+        <div class="image" style="background-image:url('../img/servicioooo.jpg');"></div>
         <div class="lighting"></div>
       </figure>
       <div class="item-content">
-        <h1>Crea un Cuestionario</h1>
+        <h1 style="font-family: 'Kaushan Script', cursive;">Crea un Cuestionario</h1>
       </div>
     </div>
   </article>
@@ -127,8 +127,32 @@
       </div>
     </div>
   </article>
-  
-  <script src="{{ asset('js/3dimagenes.js') }}"></script>
+<br>
+  <article>
+      <div class="item-wrapper" onclick="window.location ='gestionTest';">
+        <figure>
+          <div class="image" style="background-image:url('../img/servicio1.png');"></div>
+          <div class="lighting"></div>
+        </figure>
+        <div class="item-content">
+          <h1>Gestionar Cuestionario</h1>
+        </div>
+      </div>
+    </article>
+
+    <article>
+        <div class="item-wrapper" onclick="window.location ='preguntaBanco';">
+          <figure>
+            <div class="image" style="background-image:url('../img/servicio3.png');"></div>
+            <div class="lighting"></div>
+          </figure>
+          <div class="item-content">
+            <h1>Crear Preguntas</h1>
+          </div>
+        </div>
+      </article>
+
+  <script src="../js/3dimagenes.js"></script>
 
 </section>
 
@@ -140,155 +164,106 @@
 <!-- GRUPO -->
 
 <section id="team" class="pb-5">
-<div class="container">
-        <h2 class="section-heading text-uppercase" style="color: black;">EQUIPO</h2><br>
-    <div class="row"> 
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-            <div class="mainflip">
-                <div class="frontside">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <p><img class=" img-fluid" src="../img/alberth.jpg" alt="card image"></p>
-                            <h4 class="card-title">Alberth Paredes</h4>
-                            <p class="card-text">Desarrollador Web</p>
-                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="backside">
-                    <div class="card">
-                        <div class="card-body text-center mt-4">
-                            <h4 class="card-title">Paredes Mamani Alberto Orlando</h4>
-                            <p class="card-text">Encargado del frontend del Sistema Testing</p>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                        <i class="fa fa-skype"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                        <i class="fa fa-google"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ./Team member -->
-    <!-- Team member -->
-    <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-            <div class="mainflip">
-                <div class="frontside">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <p><img class=" img-fluid" src="../img/alvaro.jpeg" alt="card image"></p>
-                            <h4 class="card-title">Alvaro Zapata</h4>
-                            <p class="card-text">Desarrollador Web</p>
-                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="backside">
-                    <div class="card">
-                        <div class="card-body text-center mt-4">
-                            <h4 class="card-title">Zapata Moscoso Alvaro Luis</h4>
-                            <p class="card-text">Encargado del backend del Sistema Testing</p>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                        <i class="fa fa-skype"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                        <i class="fa fa-google"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ./Team member -->
-    <!-- Team member -->
-    <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-            <div class="mainflip">
-                <div class="frontside">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <p><img class=" img-fluid" src="../img/jhojar.jfif" alt="card image"></p>
-                            <h4 class="card-title">Johan Catari</h4>
-                            <p class="card-text">Desarrollador Web</p>
-                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="backside">
-                    <div class="card">
-                        <div class="card-body text-center mt-4">
-                            <h4 class="card-title">Johan Catari Callé</h4>
-                            <p class="card-text">Encargado del Testing y documentacion del Software</p>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                        <i class="fa fa-skype"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="social-icon text-xs-center" target="_blank" href="#">
-                                        <i class="fa fa-google"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</section>
-
+  <div class="container">
+          <h2 class="section-heading text-uppercase" style="color: black;">GRUPO</h2><br>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+              <div class="mainflip">
+                  <div class="frontside">
+                      <div class="card">
+                          <div class="card-body text-center">
+                              <p><img class=" img-fluid" src="../img/alberth.jpg" alt="card image"></p>
+                              <h4 class="card-title">Alberth Paredes</h4>
+                              <p class="card-text">Desarrollador Web</p>
+                              <a href="#" class="btn btn-secondary btn-sm"><i class="fa fa-plus"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="backside">
+                      <div class="card">
+                          <div class="card-body text-center mt-4">
+                              <h4 class="card-title">Paredes Mamani Alberto Orlando</h4>
+                              <p class="card-text">Encargado del frontend del Sistema Testing</p>
+                              <ul class="list-inline">
+                                  <li class="list-inline-item">
+                                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                                          <i class="fa fa-facebook"></i>
+                                      </a>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                                          <i class="fa fa-twitter"></i>
+                                      </a>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                                          <i class="fa fa-skype"></i>
+                                      </a>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                                          <i class="fa fa-google"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- ./Team member -->
+      <!-- Team member -->
+      <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+              <div class="mainflip">
+                  <div class="frontside">
+                      <div class="card">
+                          <div class="card-body text-center">
+                              <p><img class=" img-fluid" src="../img/alvaro.jpeg" alt="card image"></p>
+                              <h4 class="card-title">Alvaro Zapata</h4>
+                              <p class="card-text">Desarrollador Web</p>
+                              <a href="#" class="btn btn-secondary btn-sm"><i class="fa fa-plus"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="backside">
+                      <div class="card">
+                          <div class="card-body text-center mt-4">
+                              <h4 class="card-title">Zapata Moscoso Alvaro Luis</h4>
+                              <p class="card-text">Encargado del backend del Sistema Testing</p>
+                              <ul class="list-inline">
+                                  <li class="list-inline-item">
+                                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                                          <i class="fa fa-facebook"></i>
+                                      </a>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                                          <i class="fa fa-twitter"></i>
+                                      </a>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                                          <i class="fa fa-skype"></i>
+                                      </a>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                                          <i class="fa fa-google"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  </section>
 
 
 
@@ -364,14 +339,14 @@
               </ul>
             </div>
             </hr>
-          </div>	
+          </div>
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
               <p><u><a href="carrusel.html">Lo mejor de Domotica en Besafe</a></u> registrado en APCORP propietario absoluto </p>
               <p class="h6">Todos los derechos reservados -<a class="text-green ml-2" target="_blank">Besafe</a></p>
             </div>
             </hr>
-          </div>	
+          </div>
         </div>
       </section>
 

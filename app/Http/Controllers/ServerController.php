@@ -13,11 +13,16 @@ use App\Model\Answer;
 class ServerController extends Controller
 {
 	//
-	
+
 	public function authenticate(){
 		session_start();
-		if(isset($_SESSION['name']))
-			$response = $_SESSION['name'];
+		if(isset($_SESSION['name'])){
+            $object = [
+                'name'=> $_SESSION['name'],
+                'photo'=> $_SESSION['photo']
+            ];
+            $response = json_encode($object);
+        }
 		else
 			$response = "denied";
 
@@ -50,18 +55,22 @@ class ServerController extends Controller
 		$finalDate = request('finalDate');
 		$duration = request('duration');
 		$repetitions = request('repetitions');
+        $rightAnswers = request('rigthAnswers') ? 1 : 0;
+        $wrongAnswers = request('wrongAnswers') ? 1 : 0;
 
-		/*Test::create([
+		Test::create([
 			'idTeacher' => $_SESSION['id'],
 			'idSubject' => $idSubject,
 			'name' => $name,
 			'duration' => intval($duration),
 			'repetitions' => $repetitions,
 			'initialDate' => $initialDate,
-			'finalDate' => $finalDate,
+            'finalDate' => $finalDate,
+            'rightAnswers' => $rightAnswers,
+            'wrongAnswers' => $wrongAnswers,
 			'questions' => "",
 			'description' => $description
-		]);*/
+		]);
 
 		return "400 OK";
 	}
@@ -75,14 +84,37 @@ class ServerController extends Controller
 		if($response == "accepted"){
 			$teacher = Teacher::where('email',$email)->first();
 			$name = $teacher->name;
-			$id = $teacher->idTeacher;
+            $id = $teacher->idTeacher;
+            $photo = $teacher->photo;
 			$_SESSION['name'] = $name;
-			$_SESSION['id'] = $id;
+            $_SESSION['id'] = $id;
+            $_SESSION['photo'] = $photo;
 		}
 		else
 			session_destroy();
 		return $response;
-	}
+    }
+
+    public function verify(){
+        $name = request('name');
+        $email = request('email');
+        $photo = request('photo');
+
+        $response = Authentication::authentication($email, "auto");
+        session_start();
+		if($response != "accepted"){
+            $teacher = new Teacher;
+            return $teacher->insert($name, $email, $photo);
+        }
+
+        $teacher = Teacher::where('email',$email)->first();
+		$name = $teacher->name;
+		$id = $teacher->idTeacher;
+		$_SESSION['name'] = $name;
+        $_SESSION['id'] = $id;
+        $_SESSION['photo'] = $photo;
+        return $response;
+    }
 
 	public function getUser(){
 		$request = request();
@@ -95,7 +127,7 @@ class ServerController extends Controller
 
 	public function information(){
 		$request = request();
-		
+
 		$jwt = request('jwt');
 		include_once(app_path() . ServerController::getLibrary());
 		$ci = Authentication::getCi($jwt);

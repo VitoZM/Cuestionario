@@ -27,6 +27,10 @@ Route::get('/crear', function () {
     return view('crear');
 });
 
+Route::get('/sections', function () {
+    return view('sections');
+});
+
 Route::get('/cuestionario', function () {
     return view('cuestionario');
 });
@@ -39,6 +43,14 @@ Route::get('/pregunta/{initials}', function ($initials) {
     return view('pregunta')->with('initials',$initials);
 });
 
+Route::get('/gestionTest', function () {
+    return view('gestionTest');
+});
+
+Route::get('/preguntaBanco', function () {
+    return view('preguntaBanco');
+});
+
 Route::post('/authentication','ServerController@authentication');
 
 Route::post('index.php/authenticate','ServerController@authenticate');
@@ -48,3 +60,5 @@ Route::post('close','ServerController@close');
 Route::post('getSubjects','ServerController@getSubjects');
 
 Route::post('/saveTest','ServerController@saveTest');
+
+Route::post('/verify','ServerController@verify');

@@ -15,14 +15,14 @@
 
 </head>
 <body>
-        <div class="container">
-                <div class="title">SISTEMA TESTING</div>
-                <div class="subtitle"> PAREDES MAMANI ALBERTO ORLANDO Y ZAPATA MOSCOSO ALVARO LUIS </div>
-              </div>
+    <div class="container">
+        <div class="title">SISTEMA TESTING</div>
+        <div class="subtitle"> EVALUACION DOCENTE PARA ESTUDIANTES </div>
+    </div>
         <script src="js/titulo.js"></script>
 
-        
-              
+
+
     <div>
         <a href="login">
             <span data-text="E">E</span>
@@ -34,5 +34,14 @@
             <span data-text="R">R</span>
         </a>
     </div>
+    <script>
+        $(document).ready(function(){
+            let url = "index.php/close";
+            let data = $loginForm.serialize();
+
+            $.post(url, data);
+        });
+    </script>
+
 </body>
 </html>

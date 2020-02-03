@@ -8,7 +8,8 @@ $(document).ready(function(){
 
     $.post(url, data, result => {
         if(result.trim() != "denied"){
-            $name.html(result);
+            result = JSON.parse(result);
+            $name.html(result.name);
             $body.fadeIn();
         }
         else{

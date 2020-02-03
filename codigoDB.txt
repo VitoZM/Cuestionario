@@ -3,6 +3,7 @@ CREATE table teachers(
 	name varchar(60),
 	email varchar(40),
 	password varchar(40),
+	photo varchar(200),
 	created_at TIMESTAMP NULL DEFAULT NULL,
 	updated_at TIMESTAMP NULL DEFAULT NULL
 )
