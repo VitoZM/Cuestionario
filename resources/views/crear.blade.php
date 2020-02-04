@@ -18,11 +18,17 @@
     <script src="{{ asset('node_modules/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 
 
+    <style>
+        h1,h2,h3,p,a, button{
+            font-family: 'Kaushan Script', cursive;
+        }
+    </style>
+
 </head>
 <body id="body">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: black;">
         <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="#inicio" style="font-family: 'Kaushan Script', cursive; color:darkorange">Sistema Testing</a>
+          <a class="navbar-brand js-scroll-trigger" href="#" style="font-family: 'Kaushan Script', cursive; color:darkorange">Sistema Testing</a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fa fa-bars"></i>
@@ -164,106 +170,106 @@
 <!-- GRUPO -->
 
 <section id="team" class="pb-5">
-  <div class="container">
-          <h2 class="section-heading text-uppercase" style="color: black;">GRUPO</h2><br>
-      <div class="row">
+    <div class="container">
+            <h2 class="section-heading text-uppercase" style="color: black;">GRUPO</h2><br>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="../img/alberth.jpg" alt="card image"></p>
+                                <h4 class="card-title">Alberth Paredes</h4>
+                                <p class="card-text">Desarrollador Web</p>
+                                <a href="#" class="btn btn-secondary btn-sm"><i style="color:white" class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Paredes Mamani Alberto Orlando</h4>
+                                <p class="card-text">Encargado del frontend del Sistema Testing</p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ./Team member -->
+        <!-- Team member -->
         <div class="col-xs-12 col-sm-6 col-md-6">
-          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-              <div class="mainflip">
-                  <div class="frontside">
-                      <div class="card">
-                          <div class="card-body text-center">
-                              <p><img class=" img-fluid" src="../img/alberth.jpg" alt="card image"></p>
-                              <h4 class="card-title">Alberth Paredes</h4>
-                              <p class="card-text">Desarrollador Web</p>
-                              <a href="#" class="btn btn-secondary btn-sm"><i class="fa fa-plus"></i></a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="backside">
-                      <div class="card">
-                          <div class="card-body text-center mt-4">
-                              <h4 class="card-title">Paredes Mamani Alberto Orlando</h4>
-                              <p class="card-text">Encargado del frontend del Sistema Testing</p>
-                              <ul class="list-inline">
-                                  <li class="list-inline-item">
-                                      <a class="social-icon text-xs-center" target="_blank" href="#">
-                                          <i class="fa fa-facebook"></i>
-                                      </a>
-                                  </li>
-                                  <li class="list-inline-item">
-                                      <a class="social-icon text-xs-center" target="_blank" href="#">
-                                          <i class="fa fa-twitter"></i>
-                                      </a>
-                                  </li>
-                                  <li class="list-inline-item">
-                                      <a class="social-icon text-xs-center" target="_blank" href="#">
-                                          <i class="fa fa-skype"></i>
-                                      </a>
-                                  </li>
-                                  <li class="list-inline-item">
-                                      <a class="social-icon text-xs-center" target="_blank" href="#">
-                                          <i class="fa fa-google"></i>
-                                      </a>
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <!-- ./Team member -->
-      <!-- Team member -->
-      <div class="col-xs-12 col-sm-6 col-md-6">
-          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-              <div class="mainflip">
-                  <div class="frontside">
-                      <div class="card">
-                          <div class="card-body text-center">
-                              <p><img class=" img-fluid" src="../img/alvaro.jpeg" alt="card image"></p>
-                              <h4 class="card-title">Alvaro Zapata</h4>
-                              <p class="card-text">Desarrollador Web</p>
-                              <a href="#" class="btn btn-secondary btn-sm"><i class="fa fa-plus"></i></a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="backside">
-                      <div class="card">
-                          <div class="card-body text-center mt-4">
-                              <h4 class="card-title">Zapata Moscoso Alvaro Luis</h4>
-                              <p class="card-text">Encargado del backend del Sistema Testing</p>
-                              <ul class="list-inline">
-                                  <li class="list-inline-item">
-                                      <a class="social-icon text-xs-center" target="_blank" href="#">
-                                          <i class="fa fa-facebook"></i>
-                                      </a>
-                                  </li>
-                                  <li class="list-inline-item">
-                                      <a class="social-icon text-xs-center" target="_blank" href="#">
-                                          <i class="fa fa-twitter"></i>
-                                      </a>
-                                  </li>
-                                  <li class="list-inline-item">
-                                      <a class="social-icon text-xs-center" target="_blank" href="#">
-                                          <i class="fa fa-skype"></i>
-                                      </a>
-                                  </li>
-                                  <li class="list-inline-item">
-                                      <a class="social-icon text-xs-center" target="_blank" href="#">
-                                          <i class="fa fa-google"></i>
-                                      </a>
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  </div>
-  </section>
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="../img/vito.jfif" alt="card image"></p>
+                                <h4 class="card-title">Alvaro Zapata</h4>
+                                <p class="card-text">Desarrollador Web</p>
+                                <a href="#" class="btn btn-secondary btn-sm"><i style="color:white" class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Zapata Moscoso Alvaro Luis</h4>
+                                <p class="card-text">Encargado del backend del Sistema Testing</p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                            <i class="fa fa-google"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
 
 
 
@@ -310,7 +316,7 @@
               <div class="clearfix"></div>
               <div class="col-lg-12 text-center">
                 <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit" style="color: black;">Enviar Mensaje</button>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit" style="font-family: 'Kaushan Script', cursive; color: black;">Enviar Mensaje</button>
               </div>
             </div>
           </form>
@@ -326,29 +332,29 @@
 
 
   <section id="footer">
-        <div class="container">
-            <h3>Copyright © Sistema Testing 2019</h3>
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-              <ul class="list-unstyled list-inline social text-center">
-                <li class="list-inline-item"><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-                <li class="list-inline-item"><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
-                <li class="list-inline-item"><a href="https://aboutme.google.com"><i class="fa fa-google-plus"></i></a></li>
-                <li class="list-inline-item"><a href="https://www.gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
-              </ul>
-            </div>
-            </hr>
-          </div>
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-              <p><u><a href="carrusel.html">Lo mejor de Domotica en Besafe</a></u> registrado en APCORP propietario absoluto </p>
-              <p class="h6">Todos los derechos reservados -<a class="text-green ml-2" target="_blank">Besafe</a></p>
-            </div>
-            </hr>
-          </div>
+    <div class="container">
+        <h3>Copyright © Sistema Testing 2019</h3>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://aboutme.google.com"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          </ul>
         </div>
-      </section>
+        </hr>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p><u><a href="#">El mejor servicio para crear cuestionarios</a></u> registrado en APCORP propietario absoluto </p>
+          <p class="h6">Todos los derechos reservados -<a class="text-green ml-2" target="_blank">Sistema Testing</a></p>
+        </div>
+        </hr>
+      </div>
+    </div>
+  </section>
 
       <script src="../js/crear.js"></script>
 

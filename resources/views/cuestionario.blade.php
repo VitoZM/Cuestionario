@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../styles/crear.css">
     <link rel="stylesheet" href="../styles/llenar.css">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
-    <link rel="../stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-datepicker.css">
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap-datepicker.js"></script>
@@ -238,7 +238,7 @@
 
             <div class="row" style="margin-top: 10px;">
                     <div class="col-lg-12">
-                        <div class="pull-right"><i class="fa fa-share"></i>
+                        <div class="pull-right" style="font-family: 'Kaushan Script', cursive;">
                             <input type="submit" class="btn btn-success btn-lg" value="-&gt; Continuar">
                         </div>
                     </div>

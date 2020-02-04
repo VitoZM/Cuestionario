@@ -1,8 +1,6 @@
-.filterable {
-    margin-top: 15px;
-}
+
 .filterable .panel-heading .pull-right {
-    margin-top: -20px;
+    margin-top: -40px;
 }
 .filterable .filters input[disabled] {
     background-color: transparent;
